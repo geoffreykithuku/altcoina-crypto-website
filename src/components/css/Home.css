@@ -6,9 +6,6 @@
   align-items: center;
   padding: 1rem;
 }
-.home {
-  height: 70vh;
-}
 .home .left {
   padding: 1rem;
 }
@@ -19,7 +16,7 @@
   padding: 1rem 0;
 }
 .home .right {
-  padding: 1rem;
+  padding: 2rem;
 }
 .home .image-container {
   width: 100%;
@@ -27,7 +24,18 @@
 }
 .home img {
   max-width: 80%;
-  border-radius: 60px 10px;
+  border-radius: 100px 4px;
   box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
   z-index: 3;
+  margin: auto;
+}
+
+@media screen and (max-width: 940px) {
+  .home .container {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+  .home img {
+    width: 100%;
+  }
 }

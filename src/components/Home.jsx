@@ -11,7 +11,7 @@ const Home = () => {
           <h1>Invest in cryptocurrency with any amount</h1>
           <p>Compare hundreds of cryptocurrencies all over the world</p>
           <div className="input-container">
-            <input type="text" placeholder="Enter your email" />
+            <input type="email" placeholder="Enter your email" />
             <button className="btn">Get Started</button>
           </div>
         </div>
