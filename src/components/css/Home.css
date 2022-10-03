@@ -1,0 +1,33 @@
+.home .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.home {
+  height: 70vh;
+}
+.home .left {
+  padding: 1rem;
+}
+.home h1 {
+  padding: 1rem 0;
+}
+.home .input-container {
+  padding: 1rem 0;
+}
+.home .right {
+  padding: 1rem;
+}
+.home .image-container {
+  width: 100%;
+  display: flex;
+}
+.home img {
+  max-width: 80%;
+  border-radius: 60px 10px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
+  z-index: 3;
+}
