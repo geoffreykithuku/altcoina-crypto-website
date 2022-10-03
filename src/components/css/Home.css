@@ -23,17 +23,18 @@
   display: flex;
 }
 .home img {
-  max-width: 80%;
+  max-width: 90%;
   border-radius: 100px 4px;
   box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
-  z-index: 3;
+  z-index: 2;
   margin: auto;
+  border-right: 20px solid var(--primary);
 }
 
 @media screen and (max-width: 940px) {
   .home .container {
     grid-template-columns: 1fr;
-    margin: 1rem 0;
+    margin: 1rem 1rem;
   }
   .home img {
     width: 100%;
