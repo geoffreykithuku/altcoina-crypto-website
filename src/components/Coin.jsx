@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/Featured.css";
 import { FiArrowUpRight, FiArrowDown } from "react-icons/fi";
 
 const Coin = ({ image, coinname, price, percentage }) => {
