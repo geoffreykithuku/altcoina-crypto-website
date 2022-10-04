@@ -54,3 +54,18 @@
   margin: auto;
   padding: 0.2rem 0;
 }
+
+@media screen and (max-width: 940px) {
+  .featured .container {
+    grid-template-columns: 1fr;
+  }
+  .featured .left .btn {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .featured .container .right .card {
+    width: 100%;
+  }
+}
