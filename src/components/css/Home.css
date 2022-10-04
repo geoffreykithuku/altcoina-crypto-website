@@ -25,10 +25,10 @@
 .home img {
   max-width: 90%;
   border-radius: 100px 4px;
-  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
-  z-index: 2;
+  /* box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px; */
+  /* z-index: 2; */
   margin: auto;
-  border-right: 20px solid var(--primary);
+  /* border-right: 20px solid var(--primary); */
 }
 
 @media screen and (max-width: 940px) {

@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../assets/bg.jpg";
+import bg from "../assets/hero-img.png";
 import "./css/Home.css";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
       <div className="container">
         <div className="left">
           <p>Buy & Sell Crypto 24/7 at your convenience</p>
-          <h1>Invest in cryptocurrency with any amount</h1>
+          <h1>Invest in cryptocurrency today</h1>
           <p>Compare hundreds of cryptocurrencies all over the world</p>
           <div className="input-container">
             <input type="email" placeholder="Enter your email" />
