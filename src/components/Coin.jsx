@@ -3,7 +3,7 @@ import { FiArrowUpRight, FiArrowDown } from "react-icons/fi";
 
 const Coin = ({ image, coinname, price, percentage }) => {
   return (
-    <>
+    <div className="card">
       <div className="top">
         <img src={image} alt="" />
       </div>
@@ -23,7 +23,7 @@ const Coin = ({ image, coinname, price, percentage }) => {
           <FiArrowDown style={{ color: "red" }} />
         </>
       )}
-    </>
+    </div>
   );
 };
 
