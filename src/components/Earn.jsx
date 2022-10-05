@@ -18,6 +18,7 @@ const Earn = () => {
           </p>
           <div className="input-container">
             <input type="email" placeholder="Enter your  email" />
+            <button className="btn">Learn More</button>
           </div>
         </div>
       </div>
