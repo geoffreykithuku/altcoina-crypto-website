@@ -16,12 +16,12 @@ const Coin = ({ image, coinname, price, percentage }) => {
       {percentage > 0 ? (
         <>
           {percentage}%
-          <FiArrowUpRight style={{ color: "green" }} />
+          <FiArrowUpRight size={20} style={{ color: "green" }} />
         </>
       ) : (
         <>
           {percentage}%
-          <FiArrowDown style={{ color: "red" }} />
+          <FiArrowDown size={20} style={{ color: "red" }} />
         </>
       )}
     </div>

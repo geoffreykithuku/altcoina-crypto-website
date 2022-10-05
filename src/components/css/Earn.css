@@ -1,0 +1,25 @@
+.earn .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.earn .left {
+  text-align: center;
+}
+.earn .left img {
+  width: 300px;
+}
+
+.earn .left img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.earn .right p {
+  margin: 2rem 0;
+}
+
+
