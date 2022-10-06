@@ -1,4 +1,4 @@
-.card {
+.card1 {
   width: 60%;
   margin: auto;
   margin-top: 2rem;
@@ -12,11 +12,11 @@
 .content {
   margin-top: 2rem;
 }
-.thumb {
-  width: 10rem;
+.card1 .thumb {
+  width: 8rem;
   margin-top: 1rem;
 }
-.card p {
+.card1 p {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
