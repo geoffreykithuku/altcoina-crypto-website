@@ -4,8 +4,8 @@ import "./css/Card.css";
 const Card = ({ avatar, name, designation, message }) => {
   return (
     <div className="card">
-      <img style={{ width: "300px", borderRadius: "50%" }} src={avatar} />
-      <div className="myCarousel">
+      <img style={{ width: "30%", borderRadius: "50%" }} src={avatar} />
+      <div className="myCarousel content">
         <h3>{name}</h3>
         <h4>{designation}</h4>
         <p>{message}</p>
