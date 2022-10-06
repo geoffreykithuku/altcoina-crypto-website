@@ -28,7 +28,7 @@ const Navbar = () => {
             <NavLink to="/earn">Earn</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/review">Review</NavLink>
           </li>
         </ul>
         <div className="btn-group">
