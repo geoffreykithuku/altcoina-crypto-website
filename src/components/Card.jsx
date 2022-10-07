@@ -8,6 +8,7 @@ const Card = ({ avatar, name, designation, message }) => {
         className="thumb"
         style={{ width: "20%", borderRadius: "50%" }}
         src={avatar}
+        alt="image"
       />
       <div className="myCarousel content">
         <h3>{name}</h3>
