@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import bg from "../assets/hero-img.png";
 import "./css/Home.css";
 
 const Home = () => {
+  const [input, setInput] = useState("");
+
+  function handleChange(e) {
+    setInput(e.target.value);
+  }
+  function handleClick() {
+    setInput("");
+  }
   return (
     <div className="home">
       <div className="container">
@@ -11,8 +19,15 @@ const Home = () => {
           <h1>Invest in cryptocurrency today</h1>
           <p>Compare hundreds of cryptocurrencies all over the world</p>
           <div className="input-container">
-            <input type="email" placeholder="Enter your email" />
-            <button className="btn">Get Started</button>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              onChange={handleChange}
+              value={input}
+            />
+            <button onClick={handleClick} className="btn">
+              Get Started
+            </button>
           </div>
         </div>
         <div className="right">

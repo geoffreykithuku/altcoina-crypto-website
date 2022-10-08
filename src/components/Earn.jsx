@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import trade from "../assets/trade.png";
 import "./css/Earn.css";
 
 const Earn = () => {
+  const [input, setInput] = useState("");
+
+  function handleChange(e) {
+    setInput(e.target.value);
+  }
+  function handleClick() {
+    setInput("");
+  }
   return (
     <div className="earn">
       <div className="container">
@@ -17,8 +25,15 @@ const Earn = () => {
             each month with no lockups and no limits.
           </p>
           <div className="input-container">
-            <input type="email" placeholder="Enter your  email" />
-            <button className="btn">Learn More</button>
+            <input
+              type="email"
+              placeholder="Enter your  email"
+              value={input}
+              onChange={handleChange}
+            />
+            <button className="btn" onClick={handleClick}>
+              Learn More
+            </button>
           </div>
         </div>
       </div>
