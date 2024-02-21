@@ -8,19 +8,21 @@ const Featured = () => {
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false";
 
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
+
     axios
       .get(url)
       .then((resp) => {
         setData(resp.data);
+        setLoading(false);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
-
-  if (!data) return <Spinner />
 
   const coinItem = data.map((coin) => {
     return (
@@ -44,7 +46,7 @@ const Featured = () => {
           <p>See all available assets: Coins and NFTs(Price in USD)</p>
           <button className="btn">See More Coins</button>
         </div>
-        <div className="right">{coinItem}</div>
+        <div className="right">{loading ? <Spinner /> : coinItem}</div>
       </div>
     </div>
   );
