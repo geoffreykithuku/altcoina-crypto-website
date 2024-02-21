@@ -26,9 +26,7 @@ const Navbar = () => {
           <li>
             <NavLink to="/earn">Earn</NavLink>
           </li>
-          <li>
-            <NavLink to="/review">Review</NavLink>
-          </li>
+     
         </ul>
         <div className="btn-group">
           <button className="btn">Connect Wallet</button>

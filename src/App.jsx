@@ -4,7 +4,7 @@ import Earn from "./components/Earn";
 import Featured from "./components/Featured";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Review from "./components/Review";
+
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/featured" element={<Featured />} />
         <Route path="/earn" element={<Earn />} />
-        <Route path="/review" element={<Review />} />
+      
       </Routes>
     </div>
   );

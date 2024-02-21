@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Card from "./Card";
 import axios from "axios";
+import Spinner from "./Spinner";
 
 export default function Review() {
   const [reviews, setReviews] = useState([]);
@@ -14,6 +15,8 @@ export default function Review() {
       "X-RapidAPI-Host": "testimonial.p.rapidapi.com",
     },
   };
+
+  if (reviews.length === 0) return <Spinner />;
 
   axios
     .request(options)

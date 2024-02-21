@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./css/Featured.css";
 import Coin from "./Coin";
 import axios from "axios";
+import Spinner from "./Spinner";
 const Featured = () => {
   const url =
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false";
@@ -19,7 +20,7 @@ const Featured = () => {
       });
   }, []);
 
-  if (!data) return null;
+  if (!data) return <Spinner />
 
   const coinItem = data.map((coin) => {
     return (

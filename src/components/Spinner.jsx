@@ -1,8 +1,11 @@
 import React from 'react'
-
+import { MoonLoader } from 'react-spinners'
 const Spinner = () => {
   return (
-    <div>Spinner</div>
+    
+      <div className="spinner">
+          <MoonLoader color="#f2a900" size={50} />
+        </div>
   )
 }
 
